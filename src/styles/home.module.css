@@ -1,0 +1,383 @@
+.card_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2em;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.spline_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
+  align-items: center;
+}
+
+.card_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2em;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.spline_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
+  align-items: center;
+}
+
+.card {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background: rgba(212, 212, 212, 0.1);
+  backdrop-filter: blur(75px);
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.card_headings {
+  color: #5c5c5c;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.6px;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.card_features {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  margin-bottom: 1em;
+  list-style-type: disc;
+}
+
+.price_container {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.price {
+  color: #000;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.56px;
+  margin-bottom: 0.5em;
+}
+
+.month {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.8px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.buy_button {
+  width: 213px;
+  height: 62px;
+  border-radius: 30px;
+  background: #494949;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.learn_button {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  text-decoration-line: underline;
+}
+
+.feature_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.feature_offer {
+  display: flex;
+  gap: 5em;
+  margin-bottom: 10em;
+}
+
+.feature_header {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+
+.feature_desc {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 55%;
+  margin-top: 0.5em;
+}
+
+.mouse {
+  width: 30px;
+  height: 60px;
+  border: 1px solid #333;
+  border-radius: 60px;
+  position: relative;
+}
+
+.mouse::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 2s infinite;
+}
+
+.subscribe_button {
+  border: solid 1px black;
+  margin-top: 1em;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 300;
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 45px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card_container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .card_features {
+    font-size: 16px;
+  }
+
+  .card {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .card_container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card_headings {
+    font-size: 28px;
+  }
+
+  .price {
+    font-size: 48px;
+  }
+
+  .button_container {
+    margin-top: 1.5em;
+  }
+
+  .buy_button,
+  .learn_button {
+    width: 160px;
+    height: 48px;
+    font-size: 14px;
+  }
+}
+
+.card {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background: rgba(212, 212, 212, 0.1);
+  backdrop-filter: blur(75px);
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.card_headings {
+  color: #5c5c5c;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.6px;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.card_features {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  margin-bottom: 1em;
+}
+
+.price_container {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.price {
+  color: #000;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.56px;
+  margin-bottom: 0.5em;
+}
+
+.month {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.8px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.buy_button {
+  width: 213px;
+  height: 62px;
+  border-radius: 30px;
+  background: #494949;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.learn_button {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  text-decoration-line: underline;
+}
+
+.mouse {
+  width: 30px;
+  height: 60px;
+  border: 1px solid #333;
+  border-radius: 60px;
+  position: relative;
+}
+
+.mouse::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 45px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card_container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .card {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .card_container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card_headings {
+    font-size: 28px;
+  }
+
+  .price {
+    font-size: 48px;
+  }
+
+  .button_container {
+    margin-top: 1.5em;
+  }
+
+  .buy_button,
+  .learn_button {
+    width: 160px;
+    height: 48px;
+    font-size: 14px;
+  }
+}
